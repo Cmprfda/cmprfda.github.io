@@ -1098,7 +1098,7 @@ ul {
 
           &:hover {
 
-            min-height: 900vh !important;
+            //min-height: 900vh !important;
             max-height: 900vh !important;
 
             .livros {
@@ -1133,47 +1133,47 @@ ul {
               width:86vh;
               max-width: 96vw;
               min-width: 96vw;
-              height:70vw;
-              max-height: 80vh;
-              min-height: 80vh;
+              height:50vw;
+              max-height: 50vh !important;
+              min-height: 50vh !important;
               margin-left: .5vw;
               margin-right: 3.5vw;
               margin-top: 10vh;
     
               &:before {
                 
-                height:70vw;
-                max-height: 80vh;
-                min-height: 80vh;
+              height:50vw;
+              max-height: 50vh !important;
+              min-height: 50vh !important;
 
               }
     
               .page {
     
-              width:43vh;
-              max-width: 48vw;
-              min-width: 48vw;
-              height:70vw;
-              max-height: 80vh;
-              min-height: 80vh;
+                width:43vh;
+                max-width: 40vw;
+                min-width: 40vw;
+                height:50vw;
+                max-height: 50vh !important;
+                min-height: 50vh !important;
     
                 .front, .back {
     
                   width:43vh;
-                  max-width: 48vw;
-                  min-width: 48vw;
-                  height:70vw;
-                  max-height: 80vh;
-                  min-height: 80vh;
+                  max-width: 40vw;
+                  min-width: 40vw;
+                  height:50vw;
+                  max-height: 50vh !important;
+                  min-height: 50vh !important;
                     
                   .paginas {
     
                     width:43vh;
-                    max-width: 48vw;
-                    min-width: 48vw;
-                    height:70vw;
-                    max-height: 80vh;
-                    min-height: 80vh;
+                max-width: 40vw;
+                min-width: 40vw;
+                height:50vw;
+                max-height: 50vh !important;
+                min-height: 50vh !important;
                   }
                 }
               }
@@ -1183,11 +1183,11 @@ ul {
             label {
 
               width:43vh;
-              max-width: 48vw;
-              min-width: 48vw;
-              height:70vw;
-              max-height: 80vh;
-              min-height: 80vh;
+                max-width: 40vw;
+                min-width: 40vw;
+                height:50vw;
+                max-height: 50vh !important;
+                min-height: 50vh !important;
             }
           }
         }
