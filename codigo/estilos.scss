@@ -87,7 +87,6 @@ ul {
     margin: 0;
     width: 100%;
 }
-
 .wrapper {
 
     margin: 0;
@@ -144,14 +143,6 @@ ul {
                 #botao {
 
                   padding: 0;
-                  i {
-
-                    top: 32px;
-                    position: absolute;
-                    font-size: .6875rem;
-                    font-weight: lighter;
-                    color: black;
-                  }
                 }
     
                 #header-catalogo {
@@ -560,20 +551,26 @@ ul {
 
           .livro {
 
-            width:70vw;
-            height:70vh;
+            width:86vh;
+            max-width: 80vw;
+            min-width: 80vw;
+            height:70vw;
+            max-height: 80vh;
+            min-height: 80vh;
             /*   outline:1px solid black; */
   
-            margin-top: 60px;
+            margin-top: 10px;
             margin-bottom: 30vh;
             position:relative;
             perspective:75vw;
-            margin-left: 15vw;
+            margin-left: 10vw;
   
             &:before {
               
               width:1%;
-              height:70vh;
+              height:70vw;
+              max-height: 80vh;
+              min-height: 80vh;
               background:#222;
               content:'';
               position:absolute;
@@ -585,8 +582,12 @@ ul {
   
             .page {
   
-              width:35vw;
-              height:70vh;
+              width:43vh;
+              max-width: 40vw;
+              min-width: 40vw;
+              height:70vw;
+              max-height: 80vh;
+              min-height: 80vh;
               background:radial-gradient(circle at 0% 100%, #777, #ddd 70%);
               outline:1px solid black;
               box-shadow:5px 10px 10px rgba(0,0,0,.15);
@@ -604,8 +605,12 @@ ul {
   
               .front, .back {
   
-                width:35vw;
-                height:70vh;
+                width:43vh;
+                max-width: 40vw;
+                min-width: 40vw;
+                height:70vw;
+                max-height: 80vh;
+                min-height: 80vh;
                 position:absolute;
                 top:0;
                 left:0;
@@ -619,8 +624,12 @@ ul {
                 
                 .paginas {
   
-                  width: 35vw;
-                  height: 70vh;
+                  width:43vh;
+                max-width: 40vw;
+                min-width: 40vw;
+                height:70vw;
+                max-height: 80vh;
+                min-height: 80vh;
                 }
               }
   
@@ -647,8 +656,12 @@ ul {
           }
           
           label {
-            width:35vw;
-            height:70vh;
+            width:43vh;
+            max-width: 40vw;
+            min-width: 40vw;
+            height:70vw;
+            max-height: 80vh;
+            min-height: 80vh;
             z-index:99;
             position:absolute;
             left:0;
@@ -1092,6 +1105,11 @@ ul {
 
               display: block;
             }
+
+            .imagem-titulo {
+  
+              margin-top: 10vh !important;
+            }
           }
 
           .imagem-titulo {
@@ -1112,30 +1130,50 @@ ul {
 
             .livro {
   
-              width:95vw;
-              height:70vh;
-              margin-left: 1vw;
-              margin-right: 4vw;
+              width:86vh;
+              max-width: 96vw;
+              min-width: 96vw;
+              height:70vw;
+              max-height: 80vh;
+              min-height: 80vh;
+              margin-left: .5vw;
+              margin-right: 3.5vw;
+              margin-top: 10vh;
     
               &:before {
                 
-                height:70vh;
+                height:70vw;
+                max-height: 80vh;
+                min-height: 80vh;
+
               }
     
               .page {
     
-                width:48.5vw;
-                height:70vh;
+              width:43vh;
+              max-width: 48vw;
+              min-width: 48vw;
+              height:70vw;
+              max-height: 80vh;
+              min-height: 80vh;
     
                 .front, .back {
     
-                  width:48.5vw;
-                  height:70vh;
+                  width:43vh;
+                  max-width: 48vw;
+                  min-width: 48vw;
+                  height:70vw;
+                  max-height: 80vh;
+                  min-height: 80vh;
                     
                   .paginas {
     
-                    width: 48.5vw;
-                    height: 70vh;
+                    width:43vh;
+                    max-width: 48vw;
+                    min-width: 48vw;
+                    height:70vw;
+                    max-height: 80vh;
+                    min-height: 80vh;
                   }
                 }
               }
@@ -1143,8 +1181,13 @@ ul {
             }
             
             label {
-              width:48.5vw;
-              height:70vh;
+
+              width:43vh;
+              max-width: 48vw;
+              min-width: 48vw;
+              height:70vw;
+              max-height: 80vh;
+              min-height: 80vh;
             }
           }
         }
@@ -1582,3 +1625,9 @@ ul {
   z-index:1;
 }
 
+
+/*
+.dark-mode {
+  background-color: darkgrey !important;
+  color: white !important;
+}*/

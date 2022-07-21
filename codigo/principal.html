@@ -1,12 +1,3 @@
-gem install bundler jekyll
-
-jekyll new my-awesome-site
-
-cd my-awesome-site
-
-bundle exec jekyll serve
-
-# => Now browse to http://localhost:4000
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,12 +7,12 @@ bundle exec jekyll serve
     <link rel="stylesheet" href="estilos.css"> 
     <script src="https://kit.fontawesome.com/055f424868.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <link rel="icon" href="fundo/logotipo_mga.png">
+    <link rel="icon" href="fundo/logotipo_mga_noturno.png">
     <title> MGA</title>
 </head>
 <body>
 
-    <div class="wrapper">
+    <div class="wrapper" id="wrapper">
         <span id="anchor0" name="#A0"></span>
         <header>
             <nav id="main-menu">
@@ -46,6 +37,7 @@ bundle exec jekyll serve
                                 </div>
                             </div>
                         </li>
+                        <!--<button onclick="modoNoturno()">Toggle dark mode</button>-->
                         </ul>
                     </div>
                 </div>
@@ -448,7 +440,7 @@ bundle exec jekyll serve
                 <input type="checkbox" id="one-eleven">
                   <div id="one-page11" class="page">
                       <div class="front"><img class="paginas" src="catalogo/LycrasMalhasAlcochoados/pagina21.jpg"></div>
-                      <div class="back"><img class="paginas" src="catalogo/LycrasMalhasAlcochoados/pagina22.jpg"></div>
+                      <div class="back"><img class="paginas" src="catalogo/UltimaPagina.png"></div>
                     <label for="one-eleven"></label>
                   </div>
     
@@ -530,7 +522,7 @@ bundle exec jekyll serve
                   <input type="checkbox" id="two-ten">
                   <div id="two-page10" class="page">
                       <div class="front"><img class="paginas" src="catalogo/ForrosPelesPregos/pagina19.jpg"></div>
-                      <div class="back"><img class="paginas" src="catalogo/UltimaPagina.jpg"></div>
+                      <div class="back"><img class="paginas" src="catalogo/UltimaPagina.png"></div>
                     <label for="two-ten"></label>
                   </div>
     
@@ -605,7 +597,7 @@ bundle exec jekyll serve
                   <input type="checkbox" id="three-eleven">
                   <div id="three-page11" class="page">
                       <div class="front"><img class="paginas" src="catalogo/CatalogoDeInverno/pagina21.jpg"></div>
-                      <div class="back"><img class="paginas" src="catalogo/UltimaPagina.jpg"></div>
+                      <div class="back"><img class="paginas" src="catalogo/UltimaPagina.png"></div>
                     <label for="three-eleven"></label>
                   </div>
     
@@ -687,7 +679,7 @@ bundle exec jekyll serve
                   <input type="checkbox" id="four-eleven">
                   <div id="four-page11" class="page">
                       <div class="front"><img class="paginas" src="catalogo/CrocosIguanasCobras/pagina21.jpg"></div>
-                      <div class="back"><img class="paginas" src="catalogo/UltimaPagina.jpg"></div>
+                      <div class="back"><img class="paginas" src="catalogo/UltimaPagina.png"></div>
                     <label for="four-eleven"></label>
                   </div>
     
@@ -769,7 +761,7 @@ bundle exec jekyll serve
                 <input type="checkbox" id="five-twenty-six">
                 <div id="five-page26" class="page">
                     <div class="front"><img class="paginas" src="catalogo/FantasiasRedes/pagina51.jpg"></div>
-                    <div class="back"><img class="paginas" src="catalogo/UltimaPagina.jpg"></div>
+                    <div class="back"><img class="paginas" src="catalogo/UltimaPagina.png"></div>
                   <label for="five-twenty-six"></label>
                 </div>
     
@@ -956,7 +948,7 @@ bundle exec jekyll serve
                   <input type="checkbox" id="six-eighteen">
                   <div id="six-page18" class="page">
                       <div class="front"><img class="paginas" src="catalogo/TirasVinilCorticas/pagina35.jpg"></div>
-                      <div class="back"><img class="paginas" src="catalogo/UltimaPagina.jpg"></div>
+                      <div class="back"><img class="paginas" src="catalogo/UltimaPagina.png"></div>
                     <label for="six-eighteen"></label>
                   </div>
     
@@ -1087,7 +1079,7 @@ bundle exec jekyll serve
                 <input type="checkbox" id="seven-twenty-nine">
                 <div id="seven-page29" class="page">
                     <div class="front"><img class="paginas" src="catalogo/VernizesGauchosMicrofibrasCetins/pagina57.jpg"></div>
-                    <div class="back"><img class="paginas" src="catalogo/UltimaPagina.jpg"></div>
+                    <div class="back"><img class="paginas" src="catalogo/UltimaPagina.png"></div>
                   <label for="seven-twenty-nine"></label>
                 </div>
     

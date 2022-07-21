@@ -44,3 +44,81 @@ document.getElementById('book').addEventListener('click', function(e) {
     e.style.pointerEvents = ""
   }, 2000)
 })
+
+document.getElementById('book1').addEventListener('click', function(e) {
+  e = this
+  e.style.pointerEvents = "none"
+  setTimeout(function(){
+    e.style.pointerEvents = ""
+  }, 2000)
+})
+
+document.getElementById('book2').addEventListener('click', function(e) {
+  e = this
+  e.style.pointerEvents = "none"
+  setTimeout(function(){
+    e.style.pointerEvents = ""
+  }, 2000)
+})
+
+document.getElementById('book3').addEventListener('click', function(e) {
+  e = this
+  e.style.pointerEvents = "none"
+  setTimeout(function(){
+    e.style.pointerEvents = ""
+  }, 2000)
+})
+
+document.getElementById('book4').addEventListener('click', function(e) {
+  e = this
+  e.style.pointerEvents = "none"
+  setTimeout(function(){
+    e.style.pointerEvents = ""
+  }, 2000)
+})
+
+document.getElementById('book5').addEventListener('click', function(e) {
+  e = this
+  e.style.pointerEvents = "none"
+  setTimeout(function(){
+    e.style.pointerEvents = ""
+  }, 2000)
+})
+
+document.getElementById('book6').addEventListener('click', function(e) {
+  e = this
+  e.style.pointerEvents = "none"
+  setTimeout(function(){
+    e.style.pointerEvents = ""
+  }, 2000)
+})
+
+document.getElementById('book7').addEventListener('click', function(e) {
+  e = this
+  e.style.pointerEvents = "none"
+  setTimeout(function(){
+    e.style.pointerEvents = ""
+  }, 2000)
+})
+/*
+function modoNoturno() {
+   //var element = document.getElementsByTagName("h1");
+   var wrapper = document.getElementById("wrapper");
+   //var headerElement = document.getElementsByClassName("a");
+   var headerElement = document.getElementsByTagName("li");
+   var header = document.getElementsByTagName("header");
+   //var corpo = document.getElementsByClassName("corpo");
+   //element[1].classList.toggle("dark-mode");
+   wrapper.classList.toggle("dark-mode");
+   header[0].classList.toggle("dark-mode");
+   headerElement[0].classList.toggle("dark-mode");
+   headerElement[1].classList.toggle("dark-mode");
+   headerElement[2].classList.toggle("dark-mode");
+   headerElement[3].classList.toggle("dark-mode");
+   headerElement[4].classList.toggle("dark-mode");
+   headerElement[5].classList.toggle("dark-mode");
+   headerElement[6].classList.toggle("dark-mode");
+   headerElement[7].classList.toggle("dark-mode");
+   headerElement[8].classList.toggle("dark-mode");
+   headerElement[9].classList.toggle("dark-mode");
+}*/
