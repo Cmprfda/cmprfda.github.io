@@ -259,7 +259,7 @@ ul {
   overflow: hidden;
 }
 .wrapper .corpo:before {
-  background-image: url(fundo/armazem25.jpg);
+  background-image: url(fundo/armazem25.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

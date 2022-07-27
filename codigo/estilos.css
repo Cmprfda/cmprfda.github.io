@@ -286,7 +286,6 @@ ul {
 
 .wrapper .bloco {
   position: relative;
-  height: 130vh;
   width: 100vw;
   color: #212529;
   display: -webkit-box;
@@ -303,7 +302,6 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   margin: 0;
-  margin-bottom: 15vh;
   overflow: hidden;
 }
 
@@ -327,7 +325,7 @@ ul {
 }
 
 .wrapper .imagem-search:before {
-  background-image: url(fundo/mgaEntrada.jpeg);
+  background-image: url(fundo/mgaEntrada.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -347,7 +345,7 @@ ul {
 }
 
 .wrapper .corpo:before {
-  background-image: url(fundo/armazem25.jpg);
+  background-image: url(fundo/armazemAtendimento.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -591,12 +589,12 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: auto;
   margin-bottom: 0;
+  position: relative;
 }
 
 .wrapper .background-catalogo:before {
-  background-image: url(fundo/armazemMga.jpeg);
+  background-image: url(fundo/armazemMga.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -925,6 +923,21 @@ ul {
   }
 }
 
+@media screen and (min-width: 705px) {
+  .wrapper .bloco {
+    height: 130vh;
+    min-height: 130vh;
+    max-height: 130vh;
+    margin-bottom: 15vh !important;
+  }
+  .wrapper .background-catalogo {
+    height: 1050vh;
+    min-height: 1050vh;
+    max-height: 1050vh;
+    margin-bottom: 0 !important;
+  }
+}
+
 @media screen and (min-width: 705px) and (max-width: 1100px) {
   body {
     font-size: 10px !important;
@@ -977,12 +990,16 @@ ul {
     display: -ms-flexbox !important;
     display: flex !important;
     margin: 0 !important;
+    margin-right: 5px;
   }
   .wrapper header {
-    height: 50px;
+    height: 6vh;
+    position: relative;
   }
   .wrapper header #main-menu {
     margin: 0 !important;
+    padding-left: 0 !important;
+    height: 6vh;
   }
   .wrapper header #main-menu #menu-horiz .menu-esq {
     display: -webkit-box !important;
@@ -992,12 +1009,15 @@ ul {
     -webkit-box-direction: normal !important;
         -ms-flex-direction: column !important;
             flex-direction: column !important;
+    height: 6vh;
   }
   .wrapper header #main-menu #menu-horiz .menu-esq li {
     display: none !important;
     width: 100% !important;
-    max-height: 50px !important;
+    max-height: 100%px !important;
     margin: 0 !important;
+    padding: 10px !important;
+    height: 6vh;
   }
   .wrapper header #main-menu #menu-horiz .menu-esq .posicao-logo {
     display: -webkit-box !important;
@@ -1006,7 +1026,7 @@ ul {
     position: relative !important;
   }
   .wrapper header #main-menu #menu-horiz .menu-esq .posicao-logo .logo {
-    width: 30px !important;
+    width: 25px !important;
   }
   .wrapper span {
     display: none !important;
@@ -1018,20 +1038,50 @@ ul {
   .wrapper .imagem-titulo h1 {
     font-size: 20px !important;
   }
+  .wrapper .imagem-titulo:hover {
+    color: black;
+    background-color: darkgrey;
+  }
+  .wrapper .imagem-titulo:hover h1 {
+    font-size: 21px !important;
+  }
   .wrapper .bloco {
     margin: 0 !important;
-    min-height: 30vh !important;
-    max-height: 30vh !important;
+    min-height: 23.5vh;
+    max-height: 23.5vh;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+    width: 100%;
+  }
+  .wrapper .bloco:hover {
+    cursor: pointer !important;
+  }
+  .wrapper .corpo {
     -webkit-box-pack: center !important;
         -ms-flex-pack: center !important;
             justify-content: center !important;
     -webkit-transition: 0.7s;
     transition: 0.7s;
   }
-  .wrapper .bloco:hover {
-    min-height: 95vh !important;
-    max-height: 95vh !important;
-    cursor: pointer !important;
+  .wrapper .corpo #mapa_contactos {
+    margin-top: 20px;
+  }
+  .wrapper .corpo .dentro_corpo .titulo_contactos .col_contactos .nome_empresa_contactos ul li {
+    font-size: 10px !important;
+  }
+  .wrapper .corpo .dentro_corpo .titulo_contactos .col_contactos .nome_empresa_contactos ul h3 {
+    font-size: 10px !important;
+    margin-bottom: 13px !important;
+    margin-top: 20px !important;
+  }
+  .wrapper .corpo .dentro_corpo #info_contactos {
+    margin-top: 15px !important;
+  }
+  .wrapper .corpo .dentro_corpo #info_contactos .texto_contactos ul li {
+    font-size: 10px !important;
   }
   .wrapper .corpo .info_mapa_contactos {
     -webkit-box-orient: vertical !important;
@@ -1040,10 +1090,24 @@ ul {
             flex-direction: column !important;
   }
   .wrapper .corpo .info_mapa_contactos .mapouter {
-    display: none !important;
+    display: none;
+    margin: 10px 5px !important;
+    width: 80vw !important;
+    margin: 10px auto !important;
+    max-width: 562px !important;
+  }
+  .wrapper .corpo .info_mapa_contactos .mapouter .gmap_canvas {
+    height: 30vh !important;
+    width: 80vw !important;
+    max-width: 562px !important;
+  }
+  .wrapper .corpo .info_mapa_contactos .mapouter .gmap_canvas iframe {
+    max-width: 80vw !important;
+    height: 30vh !important;
+    max-width: 562px !important;
   }
   .wrapper .corpo .info_mapa_contactos .dentro_corpo {
-    display: none !important;
+    display: none;
   }
   .wrapper .corpo:hover {
     -webkit-box-pack: center !important;
@@ -1053,32 +1117,7 @@ ul {
     transition: 0.7s;
   }
   .wrapper .corpo:hover .mapouter {
-    margin: 10px 5px !important;
-    width: 80vw !important;
-    margin: 10px auto !important;
-    max-width: 562px !important;
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-  }
-  .wrapper .corpo:hover .mapouter .gmap_canvas {
-    height: 30vh !important;
-    width: 80vw !important;
-    max-width: 562px !important;
-  }
-  .wrapper .corpo:hover .mapouter .gmap_canvas iframe {
-    max-width: 80vw !important;
-    height: 30vh !important;
-    max-width: 562px !important;
-  }
-  .wrapper .corpo:hover .dentro_corpo {
-    margin: 10px 5px !important;
-    width: 80vw !important;
-    margin: 10px auto !important;
-    max-width: 562px !important;
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
+    cursor: pointer;
   }
   .wrapper .corpo:hover .dentro_corpo .titulo_contactos .col_contactos .nome_empresa_contactos ul li {
     font-size: 10px !important;
@@ -1094,13 +1133,40 @@ ul {
   .wrapper .corpo:hover .dentro_corpo #info_contactos .texto_contactos ul li {
     font-size: 10px !important;
   }
+  .wrapper #slideshow-visita-virtual {
+    /*&:hover {
+
+                .slideshow-container {
+            
+                    display: block !important;
+                }
+            }*/
+  }
   .wrapper #slideshow-visita-virtual .slideshow-container {
-    display: none !important;
+    display: none;
     margin: 0 !important;
     margin-top: 5vh !important;
+    position: relative;
+    margin: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 100vw;
+    min-width: 100vw;
+    min-height: 60vh;
+    max-height: 60vh;
+    border-radius: 0;
+    overflow: hidden;
+    z-index: 4;
   }
-  .wrapper #slideshow-visita-virtual:hover .slideshow-container {
-    display: block !important;
+  .wrapper #slideshow-visita-virtual .slideshow-container .mySlides img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: relative;
+    max-width: 100vw;
+    min-width: 100vw;
+    min-height: 60vh;
+    max-height: 60vh;
   }
   .wrapper .background-catalogo {
     display: -webkit-box;
@@ -1117,7 +1183,7 @@ ul {
     margin-top: 0 !important;
   }
   .wrapper .background-catalogo:before {
-    background-image: url(fundo/armazemMga.jpeg);
+    background-image: url(fundo/armazemMga.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1131,25 +1197,13 @@ ul {
     -webkit-filter: brightness(80%);
             filter: brightness(80%);
   }
-  .wrapper .background-catalogo:hover {
-    max-height: 900vh !important;
-  }
-  .wrapper .background-catalogo:hover .livros {
-    display: block;
-  }
-  .wrapper .background-catalogo:hover .imagem-titulo {
-    margin-top: 10vh !important;
-  }
   .wrapper .background-catalogo .imagem-titulo {
     margin-bottom: 0 !important;
-    margin-top: 10px !important;
+    margin-top: 20px !important;
   }
   .wrapper .background-catalogo .livros {
     display: none;
     margin-top: 0 !important;
-  }
-  .wrapper .background-catalogo .livros:hover {
-    display: block;
   }
   .wrapper .background-catalogo .livros .livro {
     width: 86vh;
@@ -1389,11 +1443,7 @@ ul {
   z-index: 1;
 }
 
-#five-twenty-six:checked + .page {
-  z-index: 26;
-}
-
-#five-twenty-fixe:checked + .page {
+#five-twenty-five:checked + .page {
   z-index: 25;
 }
 
